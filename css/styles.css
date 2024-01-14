@@ -86,7 +86,7 @@ p {
 .nav-list .link:hover {
   color: #404bbf;
 }
-.nav-element-studio .link:focus {
+.nav-item .link-studio:focus {
   color: #404bbf;
 }
 .header-address {
@@ -310,6 +310,7 @@ p {
 }
 .footer-logo {
   margin-bottom: 16px;
+  display: inline-block;
 }
 .footer-logo-span {
   color: #f4f4fd;
