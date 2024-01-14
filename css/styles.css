@@ -34,6 +34,8 @@ p {
 
 .container {
   width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -45,20 +47,24 @@ p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: inline-block;
 }
+
 /* #endregion Base */
 
 /* #region Header */
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
 }
 .header-nav {
   display: flex;
-  margin-right: 332px;
-  margin-left: auto;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 76px;
 }
 .header-logo-span {
   color: #2e2f42;
@@ -75,7 +81,7 @@ p {
   letter-spacing: 0.02em;
 
   padding: 24px 0;
-  display: flex;
+  display: block;
 }
 .nav-list .link:hover {
   color: #404bbf;
@@ -85,6 +91,8 @@ p {
 }
 .header-address {
   font-style: normal;
+  margin-left: auto;
+  align-items: center;
 }
 .header-address-list {
   display: flex;
@@ -98,6 +106,7 @@ p {
   letter-spacing: 0.02em;
 
   padding: 24px 0;
+  display: flex;
 }
 .header-address-list .link:hover,
 .header-address-list .link:focus {
@@ -108,8 +117,6 @@ p {
 /* #region Hero */
 .section-hero {
   background: #2e2f42;
-}
-.hero-container {
   padding: 188px 0;
 }
 .hero-title {
@@ -119,7 +126,7 @@ p {
   line-height: 1.07;
   letter-spacing: 0.02em;
 
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
   /* margin-left: auto; */
   /* margin-right: auto; */
@@ -199,8 +206,6 @@ p {
 /* #region Team */
 .section-team {
   background: #f4f4fd;
-}
-.team-container {
   padding: 120px 0;
 }
 .team-title {
@@ -221,17 +226,16 @@ p {
 }
 .team-item {
   background-color: #ffffff;
-  padding-bottom: 32px;
-  max-width: calc(100% - (3 * 24px) / 4);
+  max-width: calc((100% - (3 * 24px)) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.team-image {
-  margin-bottom: 32px;
+.team-description {
+  padding: 32px 0;
 }
-.team-item .title {
+.team-description .title {
   color: #2e2f42;
   text-align: center;
   font-size: 20px;
@@ -241,7 +245,7 @@ p {
 
   margin-bottom: 8px;
 }
-.team-item .text {
+.team-description .text {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -251,9 +255,8 @@ p {
 /* #enaregion Team */
 
 /* #region Portfolio */
-.portfolio-container {
-  padding-top: 120px;
-  padding-bottom: 183px;
+.section-portfolio {
+  padding: 120px 0 120px 0;
 }
 .portfolio-title {
   color: #2e2f42;
@@ -272,7 +275,7 @@ p {
   flex-wrap: wrap;
 }
 .portfolio-item {
-  max-width: calc(100% - 2 * 24px / 3);
+  max-width: calc((100% - 2 * 24px) / 3);
 }
 .portfolio-description {
   padding: 32px 16px;
@@ -280,7 +283,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
   align-self: stretch;
   border: 1px solid #e7e9fc;
   border-top: none;
@@ -291,6 +293,7 @@ p {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-list .portfolio-category {
   font-size: 16px;
