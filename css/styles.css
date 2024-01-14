@@ -53,6 +53,7 @@ p {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-nav {
   display: flex;
@@ -111,7 +112,7 @@ p {
 .hero-container {
   padding: 188px 0;
 }
-.section-hero .hero-title {
+.hero-title {
   color: #fff;
   text-align: center;
   font-size: 56px;
@@ -124,7 +125,7 @@ p {
   /* margin-right: auto; */
   margin-bottom: 48px;
 }
-.hero-container .hero-button {
+.hero-button {
   cursor: pointer;
   font-weight: 500;
   line-height: 1.5;
@@ -143,8 +144,8 @@ p {
   min-width: 169px;
   min-height: 56px;
 }
-.section-hero .hero-button:hover,
-.section-hero .hero-button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background: #404bbf;
 }
 /* #enaregion Hero */
